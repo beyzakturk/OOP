@@ -1,0 +1,18 @@
+Nesne Yönelimli Programlama Teorisi'nde 4 temel özelliğin gerçekleştirilmesi zorunlu sayılmıştır ve bu temel özelliklerden birini bile sağlamayan bir dil saf (pure) Nesne Yönelimli Programlama Dili sayılmaz.
+1. Soyutlama (Abstraction)
+Soyutlama denilince, nesneyi bazı karakteristikleri olan ve bazı eylemleri gerçekleştirebilen bir veri tipi olarak genelleştirmek anlaşılmalıdır. Yeryüzü üzerinde bulunan her şey bir nesnedir. Bilgisayar yazılımı açısından nesne, bir varlığın temsil biçimidir. Örneğin; bina bir nesnedir. Binayı bilgisayar yazılımı içinde temsil etmek istersek, öncelikle bu nesnenin yani binanın ayırt edici özelliklerini belirlemeliyiz.
+2. Sarmalama / Paketleme (Encapsulation)
+Paketlemenin anlamı; sınıfı oluşturan metot ve özelliklerin gerçekleştirme biçiminin, bu sınıfı kullanacak olan kullanıcılardan gizlenmiş olmasıdır.
+NESNE = VERİ + METODLAR
+şeklinde ifade edilen bağıntı aslında Nesne Yönelimli Programlama'nın temelini açıklamaktadır. Veri (özellikler) ve veri üzerinde işlem yapan kod (metotlar) bir arada bulunur ve nesneyi oluşturur. Nesneyi tanımlayan sınıfın iç ayrıntıları, normal olarak programın artakalan kısmı için görünür değildir.
+Bir nesne sınıfının gerçekleştirimini değiştirirsek, yani aynı sınıfı metot ve özellikleri aynı kalmak koşuluyla farklı bir programlama tekniğiyle oluşturursak, o sınıfın dış dünyaya olan arayüzü değişmediği sürece (metot ve özellikler aynı kaldığı sürece) bu sınıfı kullanan program kodlarınızda bir değişiklik yapmamıza gerek kalmayacaktır.
+3. Miras Alma (Inheritance)
+Nesneye yönelik programlamada, bir nesne, genellikle bir nesne sınıfına ait bir örnektir (instance).
+Örneğin, Albert Einstein, insan sınıfının bir örneğidir. Bir nesne sınıfından alt sınıflar (subclasses) oluşturulabiliyorsa, türetme özelliği (derivation) var demektir. Örneğin insan sınıfı, canlı sınıfının bir alt sınıfıdır.
+Kendisinden alt sınıf üretilen sınıfa, temel sınıf (base class) veya süper sınıf (super class) veya ana sınıf (parent class) adı verilir.
+Subclass yerine child class terimi de kullanılmaktadır.
+Alt sınıfın nesneleri, türetildikleri temel sınıfa ait özellikleri alıyorsa, burada miras alma (inheritance) özelliği vardır denir.
+Bu anlamda, miras alma özellikli bir nesne yönelimli programlama dilinde, bir nesne sınıfından türetilen alt nesne sınıfına ait nesneler, üst sınıfın özelliklerini (properties) ve metodlarını (methods) aynen alırlar.
+ 4. Çok Biçimlilik (Polymorphism)
+Farklı nesnelerin, aynı mesaja (olaya ya da uyarıma) farklı şekillerde cevap verebilme yeteneğidir.
+Her nesne sınıfı, kendi metotlarını paketlediği için ve bu metotlar programın kalan kısmı için gizli olduğundan, farklı sınıflar aynı isimde bazı metotlara sahip olabilirler.
